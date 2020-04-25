@@ -22,7 +22,13 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
+  plugins: [
+    'react',
+    'react-hooks',
+    'import-helpers',
+    '@typescript-eslint',
+    'prettier',
+  ],
   rules: {
     'prettier/prettier': 'error',
     'react-hooks/rules-of-hooks': 'error',
@@ -42,6 +48,19 @@ module.exports = {
       'error',
       {
         allowExpressions: true,
+      },
+    ],
+    'import-helpers/order-imports': [
+      'warn',
+      {
+        newlinesBetween: 'always', // new line between groups
+        groups: [
+          '/^react$/',
+          'module',
+          ['parent', 'sibling', 'index'],
+          '/styles/',
+        ],
+        alphabetize: { order: 'asc', ignoreCase: true },
       },
     ],
   },
