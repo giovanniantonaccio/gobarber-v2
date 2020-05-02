@@ -5,10 +5,12 @@ import { Form } from '@unform/web';
 import { FiArrowLeft, FiUser, FiMail, FiLock } from 'react-icons/fi';
 import * as yup from 'yup';
 
-import logoImg from '../../assets/logo.svg';
-import Button from '../../components/Button';
-import Input from '../../components/Input';
-import getValidationErrors from '../../utils/getValidationErrors';
+import Button from 'components/Button';
+import Input from 'components/Input';
+
+import getValidationErrors from 'utils/getValidationErrors';
+
+import logoImg from 'assets/logo.svg';
 
 import { Container, Content, Background } from './styles';
 

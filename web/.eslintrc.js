@@ -60,7 +60,13 @@ module.exports = {
         groups: [
           '/^react$/',
           'module',
+          '/pages/',
+          '/components/',
+          '/hooks/',
+          '/services/',
+          '/utils/',
           ['parent', 'sibling', 'index'],
+          '/assets/',
           '/styles/',
         ],
         alphabetize: { order: 'asc', ignoreCase: true },
