@@ -29,6 +29,10 @@ module.exports = {
         argsIgnorePattern: '_',
       },
     ],
+    '@typescript-eslint/interface-name-prefix': [
+      'error',
+      { prefixWithI: 'always' },
+    ],
     'import/no-unresolved': 'off',
     'import/extensions': [
       'error',
